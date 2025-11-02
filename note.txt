@@ -24,6 +24,7 @@ string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
     - erase(V, specific value) //delete all the specific value from the container
 
 # remove() 
+    - see 'aditional002.cpp' program
     - 
 
 # vector<> //dynamic array

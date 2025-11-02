@@ -30,11 +30,12 @@ int main(){
     cout<<V_char[2]<<endl;
 
     //template access
-    cout<<V_int.pop_back()<<endl;
+
     cout<<V_double.front()<<endl;
     cout<<V_string.back()<<endl;
     cout<<V_char.empty()<<endl;
 
+    
 
 
 
