@@ -18,7 +18,7 @@ int main(){
     cout<<V_double.size()<<endl;
 
     //initallizing
-    V_int = {2,14, 231, 44444, 1243, 53, 233};
+    V_int = {2, 14, 231, 44, 444, 12, 43, 53, 233};
     V_double ={3.3, 23.2, 32.3, 42.23};
     V_string = {"ashik", "ashiq"};
     V_char = {'a', 'b', 'c'};
@@ -30,13 +30,44 @@ int main(){
     cout<<V_char[2]<<endl;
 
     //template access
-
     cout<<V_double.front()<<endl;
     cout<<V_string.back()<<endl;
     cout<<V_char.empty()<<endl;
+    //using ranged for loop
+    for(auto x: V_int) cout<< x<<" "; cout<<endl;
+    //or
+    for(int i= 0; i< V_int.size(); i++ ){
+        cout<<V_int[i]<<" ";
+    } cout<<endl;
+
+    // input from the keyboard
+    cout<<"To make a vector array, Give its entry size\n";
+    int n;
+    cin>>n;
+    vector<int> Vk;
+    int y;
+    for(int i= 0; i< n; i++){
+        cin>>y;
+        Vk.push_back(y);
+    }
+    cout<<"Your array is :\t";
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;
+
+    //sort
+    sort(Vk.begin(), Vk.end()); cout<<"sort(Vk.begin(), Vk.end())"<<endl;
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;
+    sort(Vk.rbegin(), Vk.rend());cout<<"sort(Vk.rbegin(), Vk.rend())"<<endl;
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;
+    reverse(Vk.begin(), Vk.end());cout<<"reverse(Vk.begin(), Vk.end())"<<endl;
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;
+
+    //sort(Vk.rbegin(), Vk.rend()) and  reverse(Vk.begin(), Vk.end()); is same
 
     
 
+
+
+    
 
 
     return 0;
