@@ -1,0 +1,38 @@
+string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
+
+
+
+
+
+
+# sizeof() 
+    -function is a built in function in c++.
+    -it returns the size of elements in bytes unit.
+    -we can't use size() function in its place.
+
+# size()
+    - it is a stl function
+    - we only use it in stl data types like: vector<>, stack<>, queue<>, list<>, set<>, map<>,
+     string<>, array<> ;
+
+# erase()
+    - this is a stl member function.
+    - we can use it with stl containers like vector, stack, etc.
+    - syntax : 
+    - .erase(position)
+    - .erase(.begin(), .end()) //end_pos is excluded
+    - erase(V, specific value) //delete all the specific value from the container
+
+# remove() 
+    - 
+
+# vector<> //dynamic array
+    -  V[i] to specified acces
+    - .push_back()
+    - .pop_back()
+    - .size()
+    - .empty()
+    - .front()
+    - .back()
+    -  sort(V.begin(), V.end());
+    
