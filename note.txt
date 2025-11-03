@@ -1,5 +1,6 @@
 string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
 
+pair<1st dataType, 2nd dataType>
 
 
 
@@ -26,6 +27,12 @@ string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
 # remove() 
     - see 'aditional002.cpp' program
     - 
+
+# clear()
+
+    - to reset all data// making NULL;
+
+#
 
 # vector<> //dynamic array
     -  vector<int> V(size_initializer_number)
