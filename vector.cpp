@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
@@ -60,14 +58,22 @@ int main(){
     for(auto z: Vk) cout<<z<<" "; cout<<endl;
     reverse(Vk.begin(), Vk.end());cout<<"reverse(Vk.begin(), Vk.end())"<<endl;
     for(auto z: Vk) cout<<z<<" "; cout<<endl;
-
     //sort(Vk.rbegin(), Vk.rend()) and  reverse(Vk.begin(), Vk.end()); is same
 
+    //modify
+    Vk.pop_back();
+    cout<<"After pop_back() our array is :\t";
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;   
     
-
-
-
+    Vk.erase(Vk.begin());
+    cout<<"After erase(Vk.begin(), Vk.end()) our array is :\t";
+    for(auto z: Vk) cout<<z<<" "; cout<<endl; 
+    cout<<"After erasong a specific value 5"<<endl;
+    int NN = 5;
     
+    Vk.erase(remove(Vk.begin(), Vk.end(), NN), Vk.end());
+    for(auto z: Vk) cout<<z<<" "; cout<<endl;
+
 
 
     return 0;

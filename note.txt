@@ -21,13 +21,15 @@ string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
     - syntax : 
     - .erase(position)
     - .erase(.begin(), .end()) //end_pos is excluded
-    - erase(V, specific value) //delete all the specific value from the container
+    - .erase(V.begin(),V.end(), specific value, V.end()) //delete all the specific value from the container
 
 # remove() 
     - see 'aditional002.cpp' program
     - 
 
 # vector<> //dynamic array
+    -  vector<int> V(size_initializer_number)
+    -  vector<int> V(5, 0) //{0, 0, 0, 0, 0}
     -  V[i] to specified acces
     - .push_back()
     - .pop_back()
@@ -36,4 +38,11 @@ string<>, array<> , pair<>, tuple<>, dequeue<> 3W ?
     - .front()
     - .back()
     -  sort(V.begin(), V.end());
+    - .erase()
+    - .insert()
+    - .clear();
+    -  vector<vector<int>> V2D
+    -  vector<vector<int>> V2D(rowSize, vector<int>(colSize));
+    -  vector<vector<int>> V2D(rowSize, vector<int>(colSize, initializerNumber));
+    -  vector<vector<vector<int>>> V3D(x, vector<vector<int>>(y, vector<int>(z, 0))) //0 is initializer
     
